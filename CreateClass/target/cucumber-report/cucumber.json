@@ -1,0 +1,137 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "The user have to sign in as Class Manager first",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2540849500,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "The Login is Opened",
+            "match": {
+              "location": "CreateClassDefs.the_login_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6380010000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "The User attempt to login with \"anhlh2@topica.edu.vn\" and \"topica123\" information",
+            "match": {
+              "arguments": [
+                {
+                  "val": "anhlh2@topica.edu.vn",
+                  "offset": 32
+                },
+                {
+                  "val": "topica123",
+                  "offset": 59
+                }
+              ],
+              "location": "CreateClassDefs.the_user_attempt_to_login_with_something_and_something_information(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-11-19T03:36:06.813Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4437171600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.testStart()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Create class with mandatory information",
+        "description": "",
+        "id": "as-a-class-manager-i-want-to-create-new-class;create-class-with-mandatory-information",
+        "after": [
+          {
+            "result": {
+              "duration": 154500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.scenarioFinish(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 842524300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The Open Class windows already opened",
+            "match": {
+              "location": "CreateClassDefs.the_open_class_windows_already_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2201055900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "The User attempt to create a single room",
+            "match": {
+              "location": "CreateClassDefs.the_user_attempt_to_create_a_single_room()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12823916000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The class manager try to fill out the valid value to all fields before attempt to create a class",
+            "match": {
+              "location": "CreateClassDefs.the_class_manager_try_to_fill_out_the_valid_value_to_all_fields_before_attempt_to_create_a_class()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7549231500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "The class manager will se the just created class on open class list",
+            "match": {
+              "location": "CreateClassDefs.the_class_manager_will_se_the_just_created_class_on_open_class_list()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "As a class manager I want to create new class",
+    "description": "",
+    "id": "as-a-class-manager-i-want-to-create-new-class",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/topica/createclass.feature",
+    "tags": []
+  }
+]
