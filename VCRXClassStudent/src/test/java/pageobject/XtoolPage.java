@@ -17,6 +17,9 @@ public class XtoolPage extends PageObject {
 	By titleCongCu = By.xpath("//span[contains(text(),'Công cụ')]");
 	By txtMoLop = By.xpath("//span[contains(text(),'Mở lớp')]");
 	By btnTaoLop = By.xpath("//button[contains(text(),'Tạo lớp')]");
+	By choosedomain = By.xpath(
+			"//div[@class='section-class select-domain']//select[@class='mdb-select md-form colorful-select dropdown-primary']");
+	By linkdomain = By.xpath("//option[contains(text(),'https://vcrxnvndev6.topica.vn')]");
 	By btnLoc = By.xpath("//button[@class='btn btn-info btn-filter']");
 	By linkHV = By.linkText("HV - 30-WEB");
 
@@ -29,6 +32,8 @@ public class XtoolPage extends PageObject {
 		this.findElement(titleCongCu).click();
 		this.findElement(txtMoLop).click();
 		this.findElement(btnTaoLop).click();
+		this.findElement(choosedomain).click();
+		this.findElement(linkdomain).click();
 		this.findElement(btnLoc).click();
 		this.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		this.findElement(linkHV).click();

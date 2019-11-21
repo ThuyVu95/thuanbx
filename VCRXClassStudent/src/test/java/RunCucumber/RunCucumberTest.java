@@ -1,4 +1,4 @@
-package topica;
+package RunCucumber;
 
 
 import org.junit.runner.RunWith;

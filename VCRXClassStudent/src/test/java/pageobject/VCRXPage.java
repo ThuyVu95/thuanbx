@@ -73,9 +73,8 @@ public class VCRXPage extends PageObject {
 		WebElement HandOnTool = this.findElement(By.xpath("//i[@class='fa fa-hand-paper-o']"));
 		HandOnTool.click();
 		WebElement HandOnListUser = this.findElement(By.xpath("//i[@class='material-icons button-han']"));
-		Assert.assertEquals(true, HandOnListUser);
+		
+		Assert.assertEquals(true, HandOnListUser.isDisplayed());
+		
 	}
-
-	// this.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
 }

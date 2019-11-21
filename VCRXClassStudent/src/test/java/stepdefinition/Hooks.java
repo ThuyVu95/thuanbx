@@ -11,7 +11,6 @@ import org.openqa.selenium.WebElement;
 
 public class Hooks {
     public static WebDriver driver;
-
     @Before
     public void testStart() {
         String platformName = System.getProperty("browser", "chrome");
